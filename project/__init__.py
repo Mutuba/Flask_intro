@@ -12,7 +12,7 @@ login_manager.init_app(app)
 # App configurations using a config file (.py file in application root dr)
 # app.config.from_object('config.DevelopmentConfig')
 # set APP_SETTINGS= config.DevelopmentConfig in cmd
-app.config.from_object(os.environ['APP_SETTINGS'])
+app.config.from_object('config.DevelopmentConfig')
 # SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL')
 # Create the SQLALchemy Object
 db = SQLAlchemy(app)
