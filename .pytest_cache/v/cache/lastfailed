@@ -1,0 +1,3 @@
+{
+  "test.py::FlaskTestCase::test_logout_route_requires_login": true
+}
