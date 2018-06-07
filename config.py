@@ -8,7 +8,7 @@ class BaseConfig(object):
     # SQLALCHEMY_DATABASE_URI = 'sqlite:///posts.db'
     # Works for local application but not for deploying to Heroku
     #SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']  # Works for Heroku.
-    
+
     SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:baraka@localhost/posts_dev'
 
 
@@ -25,3 +25,5 @@ class DevelopmentConfig(BaseConfig):
 
 class ProductionConfig(BaseConfig):
     DEBUG = False
+
+
